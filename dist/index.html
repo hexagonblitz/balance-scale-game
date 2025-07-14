@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>양팔 저울 게임</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="game-title-text">양팔 저울 게임</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cooper+Black&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <h1 id="main-heading-text">양팔 저울 게임</h1>
+        <p id="instruction-text">무게가 다른 동전 하나를 3번의 저울 사용으로 찾아내세요!</p>
+        <p><span id="attempts-left-label">남은 시도 횟수:</span> <span id="attempts-left">3</span></p>
+
+        <div class="controls-container">
+            <div class="control-group">
+                <label for="language-select" id="language-label">언어:</label>
+                <select id="language-select">
+                    <option value="ko">한국어</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="coin-count-select" id="coin-count-label">동전 개수:</label>
+                <select id="coin-count-select">
+                    <option value="6">6개 동전 (3회)</option>
+                    <option value="8">8개 동전 (3회)</option>
+                    <option value="12">12개 동전 (3회)</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="scale-area">
+            <div class="scale-pan left-pan" id="left-pan">
+                <span class="pan-label" id="left-pan-label">왼쪽</span>
+            </div>
+            <div class="scale-pivot"></div>
+            <div class="scale-pan right-pan" id="right-pan">
+                <span class="pan-label" id="right-pan-label">오른쪽</span>
+            </div>
+        </div>
+        <button id="weigh-button"></button>
+        <button id="hint-button"></button> <button id="reset-button"></button>
+
+        <div class="coins-container" id="coins-container">
+            </div>
+
+        <div class="message-area" id="message-area"></div>
+
+        <div class="weigh-history">
+            <h2 id="history-heading-text">계량 기록</h2>
+            <div id="history-log">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
